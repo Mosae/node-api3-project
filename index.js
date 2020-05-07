@@ -1,12 +1,5 @@
 // code away!
-const express = require('express');
-const server = express();
-
-server.use(express.json());
-
-server.get('/', (req, res) => {
-	res.json(`Express middleware`);
-});
+const server = require('./server.js');
 
 server.listen(5000, () => {
 	console.log('Server is up on port 5000');
